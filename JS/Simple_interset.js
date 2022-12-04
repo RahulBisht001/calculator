@@ -5,12 +5,12 @@ function compute() {
 	const val = (principle * Rate * Year) / 100;
 	document.getElementById(
 		"pAmount"
-	).innerHTML = `Principle Amount : ${principle} USD`;
+	).innerHTML = `Principle Amount : Rs. ${principle}`;
 
-	document.getElementById("Interest").innerHTML = `Total Interest : ${val} USD`;
-	document.getElementById("Total").innerHTML = `Total Value : ${
+	document.getElementById("Interest").innerHTML = `Total Interest : Rs. ${val} `;
+	document.getElementById("Total").innerHTML = `Total Value : Rs. ${
 		val + principle
-	} USD`;
+	}`;
 	document.getElementById("formDiv").style.height = "385px";
 	document.getElementsByClassName("result")[0].style.display = "block";
 }
